@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Złoty Motyw</title>
+
+  <!-- Font Awesome (ikony) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Twój CSS -->
+  <link rel="stylesheet" href="clka.css">
+  <script src="https://js.stripe.com/v3/"></script>
+    <style>
+    #matrix-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      opacity: 0.08;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+ <header>
+<a href="#" class="logo">
+  <img src="images/valuelogo.png?v=2" alt="VL">
+</a>
+
+  <div class="nav-wrapper">
+    <nav>
+      <ul>
+        <li><a href="#">STRONA GŁÓWNA</a></li>
+        <li><a href="#">KURSY</a></li>
+        <li><a href="#">SPOŁECZNOŚĆ</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="social-icons" style="display: flex; align-items: center; gap: 15px;">
+  <a href="https://www.instagram.com/valuelegacypl" target="_blank" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://tiktok.com/" target="_blank" aria-label="TikTok">
+    <i class="fab fa-tiktok"></i>
+  </a>
+  <a href="https://youtube.com/" target="_blank" aria-label="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+
+  </button>
+</div>
+</header>
+
+  <section class="main-banner">
+  <h1>
+    Budujemy społeczność ludzi, którzy chcą budować coś więcej.
+  </h1>
+
+  <p>
+    Biznes online • Kontakty • Rozwój • Wspólne projekty • Realne możliwości
+  </p>
+</section>
+
+  <section class="offer-section">
+    <div class="offer-text">
+      <h1>Value Legacy<br><span>Dołącz na grupę</span> za jedyne <br>40zł </h1>
+      <p>Budujemy największe community w polsce</p>
+      <div class="cta-buttons">
+        <a href="#" class="buy" onclick="handlePayment(event)">KUP TERAZ</a>
+        <a href="#" class="learn">DOWIEDZ SIĘ WIĘCEJ</a>
+      </div>
+    </div>
+    <div class="offer-image"></div>
+  </section>
+
+  <section class="idea-section">
+    <h2>Skąd <strong>pomysł na grupę?</strong></h2>
+    <p>Podobną grupę prowadziliśmy dla około 200 osób. Były tam osoby od 18 do 30 roku życia. Wymienialiśmy się kontaktami, działaliśmy nad projektami i inwestowaliśmy w swoje projekty. Uznałem, że fajnie by było poszerzyć horyzonty i dać kaŽej osobie możliwość dołączenia.</p>
+    <p>Każdy ma jakiś pomysł, każdy ma jakiś kontakt czy budżet. Omawiając swoje pomysły z innymi na grupie możesz znaleźć przyszłych wspólników, podczepić się pod jakiś projekt czy po prostu poznać takie same osoby jak ty.</p>
+    <a href="#" class="join-btn">DOŁĄCZ DO VALUE LEGACY</a>
+  </section>
+
+  <section class="package-section">
+    <div class="package-left">
+      <h2>Co zawiera pakiet?</h2>
+      <ul>
+        <li>Metody na zarabianie</li>
+        <li>Community ludzi, którzy tak samo jak ty chcą zarabiać pieniądze</li>
+        <li>Wymiana kontaktów, pomysłów i doświadczenia</li>
+        <li>Metody na zarabianie w 2026 roku</li>
+        <li>Materiały opisane prosto i krok po kroku</li>
+        <li>Bez wymaganego doświadczenia na start</li>
+      </ul>
+    </div>
+    <div class="package-right">
+<div class="feature-box">
+  <i>📞</i>
+  <div class="feature-text">Live calle i rozmowy z osobami z community</div>
+</div>
+
+<div class="feature-box">
+  <i>💬</i>
+  <div class="feature-text">Aktywna społeczność i wymiana kontaktów</div>
+</div>
+
+<div class="feature-box">
+  <i>💰</i>
+  <div class="feature-text">Metody zarabiania online opisane krok po kroku</div>
+</div>
+
+<div class="feature-box">
+  <i>🤝</i>
+  <div class="feature-text">Możliwość poznania przyszłych wspólników</div>
+</div>
+
+<div class="feature-box">
+  <i>🚀</i>
+  <div class="feature-text">Wspólne projekty, pomysły i realne możliwości</div>
+</div>
+  </section>
+
+  <footer>
+<div class="footer-links">
+  <a href="regulamin.html">Regulamin</a>
+  <span>|</span>
+  <a href="#">Polityka prywatności</a>
+  <span>|</span>
+  <a href="#">Kontakt</a>
+</div>
+      <div class="footer-disclaimer">
+  Wszystkie materiały dostępne w Value Legacy mają charakter edukacyjny i informacyjny.<br><br>
+
+  Efekty zależą od indywidualnego zaangażowania, doświadczenia oraz działań podejmowanych przez użytkownika.<br><br>
+
+  Value Legacy nie gwarantuje konkretnych wyników finansowych ani osiągnięcia określonych zarobków.
+</div>
+      <div class="footer-actions">
+        <div class="support-email">
+<div class="support-email">
+  <strong>Kontakt</strong><br/>
+  support@valuelegacy.pl
+</div>
+    </div>
+ </footer>
+
+</body>
+</html>
